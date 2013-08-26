@@ -9,19 +9,40 @@ function load_teamocil(){
 
     # make project_name according to directory
     project_name=`basename \`pwd\``
-          
-    # If no session, creating it
-    tmux has-session -t $project_name > /dev/null 2>&1
-    if [ "$?" -eq 1 ] ; then
-      read -p "No Session « $project_name » found. Press [enter] to create."
-      tmux new-session -s $project_name 'teamocil --layout .teamocil.yml'
+
+    # If already in a tmux session ...
+    if [ -z "$TMUX" ]; then
+      # If the session does not exit
+      # → creating the session
+      tmux has-session -t $project_name > /dev/null 2>&1
+      if [ "$?" -eq 1 ]; then
+        echo "No Session « $project_name » found."
+        tmux new-session -d -s $project_name 'teamocil --layout .teamocil.yml'
+      else
+        echo "Session « $project_name » found."
+      fi
+
+      # Switching to it in current client
+      tmux switch-client -c $TTY -t $project_name
+
+    # ... Not in a tmux session
     else
-      read -p "Session « $project_name » found. Press [enter] to connect."
+ 
+      # If the session doesn't exist
+      # → creating it
+      tmux has-session -t $project_name > /dev/null 2>&1
+      if [ "$?" -eq 1 ]; then
+        echo "No Session « $project_name » found."
+        tmux new-session -d -s $project_name 'teamocil --layout .teamocil.yml'
+
+      # Else, the session exists
+      # → attaching to it
+      else
+        echo "Session « $project_name » found."
+      fi
+
       tmux attach-session -t $project_name
     fi
-
-    # Attaching project session
-    #tmux attach-session -t $project_name
   fi
 }
 
