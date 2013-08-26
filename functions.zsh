@@ -11,7 +11,7 @@ function load_teamocil(){
     project_name=`basename \`pwd\``
 
     # If already in a tmux session ...
-    if [ -z "$TMUX" ]; then
+    if [ ! -z "$TMUX" ]; then
       # If the session does not exit
       # → creating the session
       tmux has-session -t $project_name > /dev/null 2>&1
