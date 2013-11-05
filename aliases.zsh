@@ -5,6 +5,9 @@
 # Quitting with « q »
 alias q='exit'
 
+# Emptying a file
+alias empty='cat /dev/null >'
+
 #####################
 # GIT               #
 #####################
