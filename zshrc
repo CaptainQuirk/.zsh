@@ -1,3 +1,4 @@
+source ~/.zsh/exports.zsh
 source ~/.zsh/colors.zsh
 source ~/.zsh/setopt.zsh
 source ~/.zsh/prompt.zsh
