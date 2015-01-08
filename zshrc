@@ -1,4 +1,5 @@
 # Source every file in this directory
+source ~/.zsh/checks.zsh
 source ~/.zsh/exports.zsh
 source ~/.zsh/colors.zsh
 source ~/.zsh/setopt.zsh
