@@ -40,3 +40,7 @@ alias ack="ack-grep"
 ######################
 
 alias lynx='lynx -vikeys'
+
+if [[ $IS_LINUX -eq 1 ]]; then
+  alias tmux="TERM=screen-256color-bce tmux"
+fi
