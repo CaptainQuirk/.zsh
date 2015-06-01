@@ -11,3 +11,11 @@ source ~/.zsh/history.zsh
 # Sourcing main .profile file
 # in case important stuff is in there
 source ~/.profile
+
+# Source local rc.d directory if it exists
+CONF_DIRECTORY="$PWD/.rc.d"
+if [[ -d "$CONF_DIRECTORY" ]]; then
+  for file in $CONF_DIRECTORY/*.zsh; do
+    source $file
+  done
+fi
