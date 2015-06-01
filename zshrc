@@ -3,7 +3,6 @@ source ~/.zsh/checks.zsh
 source ~/.zsh/exports.zsh
 source ~/.zsh/colors.zsh
 source ~/.zsh/setopt.zsh
-source ~/.zsh/prompt.zsh
 source ~/.zsh/functions.zsh
 source ~/.zsh/aliases.zsh
 source ~/.zsh/history.zsh
@@ -19,3 +18,5 @@ if [[ -d "$CONF_DIRECTORY" ]]; then
     source $file
   done
 fi
+
+source ~/.zsh/prompt.zsh
