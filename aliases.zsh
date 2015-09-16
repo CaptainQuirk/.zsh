@@ -36,6 +36,12 @@ alias gbp='git pb'
 alias ack="ack-grep"
 
 
+#######
+# VIM #
+#######
+
+alias vim="vim -S"
+
 ######################
 # MISC               #
 ######################
