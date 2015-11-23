@@ -20,3 +20,7 @@ if [[ -d "$CONF_DIRECTORY" ]]; then
 fi
 
 source ~/.zsh/prompt.zsh
+
+if [[ -d ~/.fortune ]]; then
+  fortune ~/.fortune/fortune | cowsay
+fi
