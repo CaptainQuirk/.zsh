@@ -6,6 +6,7 @@ source ~/.zsh/setopt.zsh
 source ~/.zsh/functions.zsh
 source ~/.zsh/aliases.zsh
 source ~/.zsh/history.zsh
+source ~/.zsh/autocomplete.zsh
 
 # Sourcing main .profile file
 # in case important stuff is in there
