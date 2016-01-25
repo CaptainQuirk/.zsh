@@ -93,7 +93,7 @@ unsetopt menu_complete # do not autoselect the first completion entry
 setopt correct
 
 # spelling correction for arguments
-setopt correctall
+unsetopt correct_all
 
 
 ##########
