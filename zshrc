@@ -23,5 +23,5 @@ fi
 source ~/.zsh/prompt.zsh
 
 if [[ -d ~/.fortune ]]; then
-  fortune ~/.fortune/fortune | cowsay
+  fortune ~/.fortune/fortune | cowsay -f $(ls /usr/local/Cellar/cowsay/3.03/share/cows | gshuf -n1)
 fi
