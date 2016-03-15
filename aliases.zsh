@@ -45,3 +45,15 @@ alias lynx='lynx -vikeys'
 if [[ $IS_LINUX -eq 1 ]]; then
   alias tmux="TERM=screen-256color-bce tmux"
 fi
+
+
+#####
+# s #
+#####
+
+alias som="s -p duckduckgo \!mdn"
+alias sow="s -p duckduckgo \!w"
+alias sos="s -p duckduckgo \!so"
+alias sogi="s -p duckduckgo \!gi"
+alias sog="s -p duckduckgo \!g"
+alias soh="s -p duckduckgo \!github"
