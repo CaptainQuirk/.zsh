@@ -16,6 +16,10 @@ unsetopt menu_complete
 autoload -Uz compinit
 compinit
 
+autoload up-line-or-beginning-search
+autoload down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
 
 if [[ $IS_MAC -eq 1 ]]; then
   export CLICOLOR=1
