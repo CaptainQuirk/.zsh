@@ -57,3 +57,9 @@ alias sos="s -p duckduckgo \!so"
 alias sogi="s -p duckduckgo \!gi"
 alias sog="s -p duckduckgo \!g"
 alias soh="s -p duckduckgo \!github"
+
+
+# vim
+# ---
+
+alias vimki="vim -u ~/.vimki/vimrc"
