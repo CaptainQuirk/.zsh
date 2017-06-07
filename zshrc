@@ -15,7 +15,7 @@ source ~/.profile
 
 # Source local rc.d directory if it exists
 CONF_DIRECTORY="$PWD/.rc.d"
-if [[ -d "$CONF_DIRECTORY" ]]; then
+if [[ -d "$CONF_DIRECTORY" || -L "$CONF_DIRECTORY" ]]; then
   for file in $CONF_DIRECTORY/*.zsh; do
     source $file
   done
