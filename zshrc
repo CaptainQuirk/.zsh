@@ -27,4 +27,7 @@ if [[ -d ~/.fortune ]]; then
   fortune ~/.fortune/fortune | cowsay -f $(ls /usr/local/Cellar/cowsay/3.03/share/cows | gshuf -n1)
 fi
 
-eval $(gpg-agent --daemon)
+source ~/.zsh/plugins.zsh
+source ~/.zsh/keys.zsh
+
+#eval $(gpg-agent --daemon)
