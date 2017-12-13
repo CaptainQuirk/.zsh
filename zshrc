@@ -1,13 +1,13 @@
 # Source every file in this directory
-source ~/.zsh/checks.zsh
-source ~/.zsh/exports.zsh
-source ~/.zsh/colors.zsh
-source ~/.zsh/setopt.zsh
-source ~/.zsh/functions.zsh
-source ~/.zsh/aliases.zsh
-source ~/.zsh/history.zsh
-source ~/.zsh/autocomplete.zsh
-source ~/.zsh/stty.zsh
+source ./checks.zsh
+source ./exports.zsh
+source ./colors.zsh
+source ./setopt.zsh
+source ./functions.zsh
+source ./aliases.zsh
+source ./history.zsh
+source ./autocomplete.zsh
+source ./stty.zsh
 
 # Sourcing main .profile file
 # in case important stuff is in there
@@ -21,13 +21,13 @@ if [[ -d "$CONF_DIRECTORY" || -L "$CONF_DIRECTORY" ]]; then
   done
 fi
 
-source ~/.zsh/prompt.zsh
+source ./prompt.zsh
 
 if [[ -d ~/.fortune ]]; then
   fortune ~/.fortune/fortune | cowsay -f $(ls /usr/local/Cellar/cowsay/3.03/share/cows | gshuf -n1)
 fi
 
-source ~/.zsh/plugins.zsh
-source ~/.zsh/keys.zsh
+source ./plugins.zsh
+source ./keys.zsh
 
 #eval $(gpg-agent --daemon)
