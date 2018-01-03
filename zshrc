@@ -19,6 +19,7 @@ export PATH=~/lib/npm/bin:~/Documents/System/gitextensions:~/.android/android-sd
 export MANPATH=/opt/local/share/man:$MANPATH
 export PYTHONPATH=/usr/local/bin:~/.powerline/plugins:$PYTHONPATH
 export GOPATH=~/.go
+export EDITOR=/usr/bin/editor
 
 if [[ $IS_MAC -eq 1 ]]; then
   export LESSCHARSET=next
