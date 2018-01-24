@@ -15,7 +15,7 @@ fi
 
 
 export ACKRC=".ackrc"
-export PATH=~/lib/npm/bin:~/Documents/System/gitextensions:~/.android/android-sdk/platform-tools:~/.android/android-sdk/tools:/opt/local/bin:/opt/local/sbin:~/bin:/~/.composer/vendor/bin:~/.linuxbrew/bin:$PATH
+export PATH=~/lib/npm/bin:~/Documents/System/gitextensions:~/.android/android-sdk/platform-tools:~/.android/android-sdk/tools:/opt/local/bin:/opt/local/sbin:~/bin:/~/.composer/vendor/bin:~/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 export PYTHONPATH=/usr/local/bin:~/.powerline/plugins:$PYTHONPATH
 export GOPATH=~/.go
