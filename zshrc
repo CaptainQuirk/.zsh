@@ -20,6 +20,7 @@ export MANPATH=/opt/local/share/man:$MANPATH
 export PYTHONPATH=/usr/local/bin:~/.powerline/plugins:$PYTHONPATH
 export GOPATH=~/.go
 export EDITOR=/usr/bin/editor
+export TERM=rxvt-unicode-256color
 
 if [[ $IS_MAC -eq 1 ]]; then
   export LESSCHARSET=next
