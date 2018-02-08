@@ -22,6 +22,7 @@ export GOPATH=~/.go
 export EDITOR=/usr/bin/editor
 export TERM=rxvt-unicode-256color
 export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/
+export XDG_CONFIG_HOME=$HOME/.config
 
 if [[ $IS_MAC -eq 1 ]]; then
   export LESSCHARSET=next
