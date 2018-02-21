@@ -397,3 +397,14 @@ bindkey '^u' kill-whole-line
 bindkey '^t' transpose-chars
 bindkey '^[t' transpose-words
 
+
+# Source workstation related files
+# --------------------------------
+
+# Source local rc.d directory if it exists
+WORKSTATION_DIRECTORY="$HOME/Documents/configuration/workstation/zsh"
+if [[ -d "$WORKSTATION_DIRECTORY" || -L "$WORKSTATION_DIRECTORY" ]]; then
+  for file in $WORKSTATION_DIRECTORY/*.zsh; do
+    source $file
+  done
+fi
