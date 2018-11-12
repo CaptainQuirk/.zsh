@@ -408,3 +408,8 @@ if [[ -d "$WORKSTATION_DIRECTORY" || -L "$WORKSTATION_DIRECTORY" ]]; then
     source $file
   done
 fi
+
+# setup direnv
+if command -v direnv > /dev/null 2>&1; then
+  eval "$(direnv hook zsh)"
+fi
