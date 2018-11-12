@@ -15,10 +15,10 @@ fi
 
 
 export ACKRC=".ackrc"
-export PATH=~/lib/npm/bin:~/Documents/System/gitextensions:~/.android/android-sdk/platform-tools:~/.android/android-sdk/tools:/opt/local/bin:/opt/local/sbin:~/bin:/~/.composer/vendor/bin:~/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:~/.cargo/bin:$PATH
+export GOPATH=~/.go
+export PATH=~/lib/npm/bin:~/Documents/System/gitextensions:~/.android/android-sdk/platform-tools:~/.android/android-sdk/tools:/opt/local/bin:/opt/local/sbin:~/bin:/~/.composer/vendor/bin:~/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:~/.cargo/bin:$PATH:$GOPATH/bin
 export MANPATH=/opt/local/share/man:$MANPATH
 export PYTHONPATH=/usr/local/bin:~/.powerline/plugins:$PYTHONPATH
-export GOPATH=~/.go
 export EDITOR=/usr/bin/editor
 export TERM=rxvt-unicode-256color
 export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/
