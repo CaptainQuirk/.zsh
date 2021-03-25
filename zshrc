@@ -18,7 +18,8 @@ export ACKRC=".ackrc"
 export GOPATH=~/.go
 export PATH=~/lib/npm/bin:~/Documents/System/gitextensions:~/.android/android-sdk/platform-tools:~/.android/android-sdk/tools:/opt/local/bin:/opt/local/sbin:~/bin:/~/.composer/vendor/bin:~/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.3/bin:~/.cargo/bin:$PATH:$GOPATH/bin
 export MANPATH=/opt/local/share/man:$MANPATH
-export PYTHONPATH=/usr/local/bin:~/.powerline/plugins:$PYTHONPATH
+# TODO Find another way to add the current site-packages directory
+export PYTHONPATH=/usr/local/bin:~/.powerline/plugins:/home/linuxbrew/.linuxbrew/lib/python3.9/site-packages:$PYTHONPATH
 export EDITOR=/usr/bin/editor
 export TERM=rxvt-unicode-256color
 export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/
