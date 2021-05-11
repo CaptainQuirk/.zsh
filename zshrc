@@ -411,7 +411,6 @@ WORKSTATION_DIRECTORY="$HOME/.zsh-runtime"
 if [[ -d "$WORKSTATION_DIRECTORY" || -L "$WORKSTATION_DIRECTORY" ]]; then
   for cmd in $WORKSTATION_DIRECTORY/*; do
     for file in $cmd/*.zsh; do
-      echo "sourcing $file"
       source $file
     done
   done
