@@ -407,10 +407,13 @@ bindkey '^[t' transpose-words
 # --------------------------------
 
 # Source local rc.d directory if it exists
-WORKSTATION_DIRECTORY="$HOME/Documents/configuration/workstation/zsh"
+WORKSTATION_DIRECTORY="$HOME/.zsh-runtime"
 if [[ -d "$WORKSTATION_DIRECTORY" || -L "$WORKSTATION_DIRECTORY" ]]; then
-  for file in $WORKSTATION_DIRECTORY/*.zsh; do
-    source $file
+  for cmd in $WORKSTATION_DIRECTORY/*; do
+    for file in $cmd/*.zsh; do
+      echo "sourcing $file"
+      source $file
+    done
   done
 fi
 
